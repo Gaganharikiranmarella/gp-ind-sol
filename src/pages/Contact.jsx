@@ -5,17 +5,22 @@ const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setError('');
+    setSubmitted(false);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
+    setSubmitted(false);
 
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://gp-node-apps.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -25,11 +30,11 @@ const Contact = () => {
         setSubmitted(true);
         setForm({ name: '', email: '', message: '' });
       } else {
-        alert('Something went wrong. Try again.');
+        setError('Something went wrong. Try again.');
       }
     } catch (err) {
       console.error(err);
-      alert('Error submitting form.');
+      setError('Error submitting form.');
     } finally {
       setLoading(false);
     }
@@ -69,6 +74,7 @@ const Contact = () => {
         {submitted && (
           <p className="success-message">✅ Your message has been sent!</p>
         )}
+        {error && <p className="error-message">{error}</p>}
       </form>
     </main>
   );

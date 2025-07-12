@@ -1,4 +1,5 @@
 import NewsSlider from '../components/NewsSlider';
+import AchievementsSection from '../components/AchievementsSection';
 
 const Home = () => (
   <>
@@ -8,6 +9,9 @@ const Home = () => (
 
       {/* News Section */}
       <NewsSlider />
+
+      {/* Our Latest Achievements */}
+      <AchievementsSection />
     </main>
   </>
 );

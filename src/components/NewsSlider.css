@@ -1,0 +1,58 @@
+.news-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  text-align: center;
+  font-weight: 600;
+}
+
+.news-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.news-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.slick-dots li button:before {
+  color: #333;
+}
+
+/* Ensure arrows are visible and clickable */
+.slick-prev, .slick-next {
+  display: block !important;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  color: #222 !important;
+  opacity: 1 !important;
+}
+
+/* Optional: Position arrows better */
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+

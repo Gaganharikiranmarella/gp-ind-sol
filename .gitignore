@@ -96,3 +96,10 @@ mongodb-data/
 # VS Code debug
 *.launch
 .vscode/launch.json
+node_modules/
+dist/
+.vscode/
+.env
+.DS_Store
+Thumbs.db
+.vercel/

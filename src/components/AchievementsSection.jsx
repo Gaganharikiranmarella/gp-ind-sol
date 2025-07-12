@@ -1,6 +1,6 @@
-import React from 'react';
-import './AchievementsSection.css';
-import trophyImage from '../assets/achievement.jpg'; // You can change the image file
+import React from "react";
+import "./AchievementsSection.css";
+import trophyImage from "../assets/achievement.jpg"; // You can change the image file
 
 const AchievementsSection = () => {
   return (
@@ -8,7 +8,9 @@ const AchievementsSection = () => {
       <div className="achievement-text">
         <h2>🏆 Our Latest Achievements</h2>
         <p>
-          GP India Solutions was recently recognized for its outstanding contribution to digital transformation and AI integration in the public sector. Our team successfully deployed a state-of-the-art automated system that reduced processing time by 60%, helping boost efficiency across multiple departments.
+          The work starts now. With the advent of GP India Solutions, we have
+          sworn to utilise our innovative mindset as well as skills learnt in
+          order to apply them in real life
         </p>
       </div>
       <div className="achievement-image">

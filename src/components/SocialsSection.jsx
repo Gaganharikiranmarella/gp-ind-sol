@@ -6,11 +6,11 @@ const SocialsSection = () => {
     <section className="socials-section">
       {/* Person 1 */}
       <div className="person">
-        <h3>Gagan Hari Kiran</h3>
+        <h3>Marella Gagan Hari Kiran</h3>
         <ul>
-          <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:your@email.com">Email</a></li>
+          <li><a href="https://github.com/Gaganharikiranmarella" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/gagan-hari-kiran-462856287" target="_blank">LinkedIn</a></li>
+          <li><a href="ghk7125@gmail.com">Email</a></li>
         </ul>
       </div>
 
@@ -19,11 +19,11 @@ const SocialsSection = () => {
 
       {/* Person 2 */}
       <div className="person">
-        <h3>John Doe</h3>
+        <h3>Prayaga Sri Ram Pranav</h3>
         <ul>
-          <li><a href="https://github.com/johndoe" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:johndoe@email.com">Email</a></li>
+          <li><a href="https://github.com/Ram200509" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pranav-prayaga-1891a5322" target="_blank">LinkedIn</a></li>
+          <li><a href="prayagapranav.sarath@gmail.com">Email</a></li>
         </ul>
       </div>
     </section>
